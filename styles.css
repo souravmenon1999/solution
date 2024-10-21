@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%; /* Width of the entire container */
+    height: 80%; /* Height of the entire container */
+    border: 1px solid #ccc; /* Optional border for visibility */
+}
+
+.sidebar {
+    flex: 1; /* Left sidebar takes 1 part */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF; /* Sidebar background color */
+    color: white; /* Button text color */
+}
+
+.sidebar button {
+    margin: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #004494; /* Darker on hover */
+}
+
+.content {
+    flex: 3; /* Content area takes 3 parts */
+    display: flex;
+    justify-content: center;
+    background-color:#e7e1e1; /* Content background color */
+    padding: 20px;
+    border-left: 1px solid #ccc; /* Optional border */
+}
+
+#contentArea {
+    text-align: center; /* Center text inside content area */
+    transition: opacity 0.6s; /* Fade transition */
+}
+
+h2{
+    margin-bottom: 40px;
+}
+/* Styles for dynamic buttons */
+
+a {
+    text-decoration: none; /* Removes the underline */
+}
+.dynamic-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000; /* Greenish gold color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dynamic-button:hover {
+    background-color: #9fb006; /* Darker greenish gold on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
